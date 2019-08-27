@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap"');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+	margin: 0;
+	padding: 0;
+	font-family:'Hepta Slab', serif;
+	background: url(bg5.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+}
+
+.box {
+	max-width: 300px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background: #191919;
+	text-align: center;
+	border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;
+-moz-border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;
+-webkit-border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;
+border: 0vw solid #000000;
+
+}
+.box h1{
+	font-weight: 500;
+	color: white;
+	text-transform: uppercase;
+	font-size: 3vw;
+}
+
+.text-container {
+  margin: 0.1vw 0.1vw;
+  display: flex;
+  align-items: center;
+  
+}
+
+.text-container input{
+	border:0;
+	font-family:'Hepta Slab', serif;
+	background: none;
+	display: block;
+	margin: 2vw auto;
+	text-align: left;
+	border: 0.15vw solid #3498db;
+	padding: 1.1vw 0.5vw;
+	width: 18vw;
+	outline: none;
+	color: white;
+	border-radius: 4vw;
+	transition: 0.25s;
+
+}
+
+
+
+.input-container {
+  margin: 0.5vw 2vw;
+  display: flex;
+  align-items: center;
+  border: 0.15vw solid #3498db;
+  border-radius: 2.1vw;
+
+}
+
+.input-container:hover{
+	border: 0.2vw solid #2ecc71;
+	transition: 0.25s;
+}
+
+.input-container input {
+  	border:0;
+	font-family:'Hepta Slab', serif;
+	background: none;
+	display: block;
+	margin: 0.1vw 0.1vw;
+	text-align: center;
+	border: 0vw solid #3498db;
+	padding: 1.1vw 0.5vw;
+	width: 26vw;
+	outline: none;
+	color: white;
+	border-radius: 3.1vw;
+	transition: 0.25s;
+	text-align: left;
+}
+.text-container input:hover{
+	border-color: #2ecc71;
+}
+
+
+
+
+
+i {
+  margin: 0 1.1vw;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.box input[type = "submit"]{
+	border:0;
+	background: none;
+	font-family:'Hepta Slab', serif;
+	display: block;
+	margin: 2vw auto;
+	text-align: center;
+	border: 0.15vw solid #2ecc71;
+	padding: 1vw 1.3vw;
+	width: 15vw;
+	outline: none;
+	color: white;
+	border-radius: 2vw;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+	background: #2ecc71;
+}
+
+.box a{
+	text-decoration: none;
+	font-size: 1vw;
+	line-height: 1vw;
+	color: darkgrey;
+}
+
+.box a:hover{
+	color: #2ecc71;
+}
+
+/*==================================================================
+[ Restyle Checkbox ]*/
+
+.input-checkbox100 {
+  display: none;
+}
+
+.label-checkbox100 {
+  font-family: 'Hepta Slab', serif;
+  font-size: 1vw;
+  color: #999999;
+  line-height: 1.4;
+
+  display: block;
+  position: relative;
+  padding-left: 1.6vw;
+  cursor: pointer;
+}
+
+.label-checkbox100::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-size: 1vw;
+  color: transparent;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  max-width: 1vw;
+  max-height: 1vw;
+  border-radius: 0.2vw;
+  background: #fff;
+  border: 0.2vw solid #e6e6e6;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.input-checkbox100:checked + .label-checkbox100::before {
+  color: #2ecc71;
+}
+
+.flex-sb-m {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.w-full {max-width: 100%;}
+.p-b-48 {padding-bottom: 2.4vw;}
+
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Responsive ]*/
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(bg5.jpg);
+  }
+}
