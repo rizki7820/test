@@ -7,13 +7,6 @@
 	</head>
 
 	<body>
-	<?php
-            session_start();
-            if(isset($_SESSION['ID_ADMIN'])) {
-                header('location:index.php');
-                }
-            require_once("koneksi.php");
-        ?>
 
 <form class="box" action="home.html" method="post">
 	<h1>Login</h1>
